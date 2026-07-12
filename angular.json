@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "secondhand_boosMarket": {
+    "secondhand-books-market": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "secondhand_boosMarket:build:production"
+              "buildTarget": "secondhand-books-market:build:production"
             },
             "development": {
-              "buildTarget": "secondhand_boosMarket:build:development"
+              "buildTarget": "secondhand-books-market:build:development"
             }
           },
           "defaultConfiguration": "development"
