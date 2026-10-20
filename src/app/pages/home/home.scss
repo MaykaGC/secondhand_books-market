@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 100px;
 }
 
 .section-one {
     color: black;
+    background-color: #a4b9b2;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
@@ -25,15 +25,15 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-top: 100px;
 }
-
 
 .button {
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
-
+   
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -55,20 +55,120 @@
 }
 
 .section-two {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: 100%;
     width: 100%;
-    min-height: 500px
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
 }
 
-.card-container{
+.section-two-content {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.section-two-content h2 {
+    max-width: 1200px;
+    margin: 0 0 5px;
+    text-align: left;
+}
+.section-two-content p {
+    margin: 0 0 30px;
+}
+
+.card-container {
     display: flex;
     flex-direction: row;
-    gap: 30px; 
+    gap: 30px;
+    justify-content: center;
+}
+
+.section-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    gap: 8px;
+}
+
+.section-three p {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+
+.link {
+
+    padding-top: 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #2E5E4E;
 
 }
+
+.arrow-one {
+    font-size: 60px;
+    color: #C9A227;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.section-one h1 {
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+.section-one p {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.section-one .button {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .section-one h1,
+    .section-one p,
+    .section-one .button {
+        animation: none;
+    }
+}
+
